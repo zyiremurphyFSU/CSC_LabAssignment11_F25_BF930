@@ -1,5 +1,4 @@
-# TODO: complete the function definition in the next line
-def celsius_to_fahrenheit():
+def celsius_to_fahrenheit(celsius):
     """
     Convert Celsius temperature to Fahrenheit.
     @param celsius (float): Temperature in Celsius.
@@ -8,8 +7,7 @@ def celsius_to_fahrenheit():
     return 9 / 5 * celsius + 32
 
 
-# TODO: complete the function definition in the next line
-def fahrenheit_to_celsius():
+def fahrenheit_to_celsius(fahrenheit):
     """
     Convert Fahrenheit temperature to Celsius.
     @param fahrenheit (float): Temperature in Fahrenheit.
@@ -20,10 +18,12 @@ def fahrenheit_to_celsius():
 
 def main():
     c = 36.5
-    # TODO: send variable c to function celsius_to_fahrenheit(), and print it out
+    f_from_c = celsius_to_fahrenheit(c)
+    print(f"{c} C is equal to {f_from_c} F")
 
     f = 101.3
-    # TODO: send variable f to function fahrenheit_to_celsius(), and print it out
+    c_from_f = fahrenheit_to_celsius(f)
+    print(f"{f} F is equal to {c_from_f} C")
 
 
 if __name__ == "__main__":
